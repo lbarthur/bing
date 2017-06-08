@@ -1,0 +1,22 @@
+<html>
+<head><meta http-equiv="CONTENT-TYPE" content="text/html"; charset="utf-8">
+    <title>welcome to user login system </title>
+</head>
+<body>
+<div>
+    {% if result %}
+    <p style="color: red">{{result}}</p>
+    {%endif%}
+    {%if userid%}
+    <form id="changepwdForm" action="/changepwd" method="post" accept-charset="UTF-8">
+        <!--  从get中获取id -->
+        <input type="hidden" id="id" name="id" value="{{userid}}">
+        Type old password:<input id="oldpwd" type="password" name="oldpwd"><br>
+        New password:<input  id="newpwd" type="password" name="newpwd"><br>
+        Retype new password:<input  id="repwd" type="password" name="repwd"><br>
+        <input id="changepwdbtn" type="submit" value="submit">
+    </form>
+    {%endif%}
+</div>
+</body>
+</html>

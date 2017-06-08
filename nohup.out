@@ -1,0 +1,15 @@
+2017-05-04 16:59:06.945612
+++++++++++++++++++++++++++++++++++++++++++++++++++
+16:59:06
+Traceback (most recent call last):
+  File "firsttime.py", line 25, in <module>
+    perfcollection(timelist)
+  File "firsttime.py", line 18, in perfcollection
+    f = open("/reboot/logs/"+datetime.datetime.now().date().isoformat()+'.csv',"a+")
+FileNotFoundError: [Errno 2] No such file or directory: '/reboot/logs/2017-05-04.csv'
+Traceback (most recent call last):
+  File "firsttime.py", line 25, in <module>
+    perfcollection(timelist)
+  File "firsttime.py", line 18, in perfcollection
+    f = open("/reboot/logs/"+datetime.datetime.now().date().isoformat()+'.csv',"a+")
+FileNotFoundError: [Errno 2] No such file or directory: '/reboot/logs/2017-05-04.csv'

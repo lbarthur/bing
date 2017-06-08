@@ -1,0 +1,23 @@
+<html>
+<head><meta http-equiv="CONTENT-TYPE" content="text/html"; charset="utf-8">
+    <title>welcome to user login system </title>
+</head>
+<body>
+<div>
+    {% if result %}
+    <p style="color: red">{{result}}</p>
+    {%endif%}
+    <!--<form id="loginForm" action="/login" method="post" accept-charset="UTF-8"> -->
+    <form id="loginForm">
+    username:<input id="name" type="text" name="name"><br>
+    password:<input  id="password" type="password" name="password"><br>
+    <input id="loginbtn" type="submit" value="submit">
+    </form>
+</div>
+<!--<script src="/static/js/jquery-3.2.1.min.js"></script>-->
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    alert("welcome")
+</script>
+</body>
+</html>

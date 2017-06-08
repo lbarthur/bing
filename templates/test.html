@@ -1,0 +1,18 @@
+<table border='1'>
+	<thead>
+		<tr>
+		<td>Name</td>
+		<td>Password</td>
+		</tr>
+	</thead>
+	<tbody>
+		{%for user in users%}
+		{%if user[0] and user[1] %}
+		<tr>
+		<td>{{user[0]}}</td>
+		<td>{{user[1]}}</td>
+		</tr>
+		{%endif%}
+		{%endfor%}
+	</tbody>
+</table>

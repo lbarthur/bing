@@ -1,0 +1,24 @@
+<table border='1'>
+	<thead>
+		<tr>
+            <td>ID</td>
+            <td>Name</td>
+            <td>Email</td>
+            <td>Mobile</td>
+            <td>Create_time</td>
+            <td>Last_time</td>
+            <td>Operations</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+            <td>{{user.id}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.mobile}}</td>
+            <td>{{user.create_time}}</td>
+            <td>{{user.last_time}}</td>
+            <td><a href="/update?id={{user.id}}"><input type="button" name="update" value="update"></a></td>
+		</tr>
+	</tbody>
+</table>

@@ -1,0 +1,52 @@
+<html>
+<head><meta http-equiv="CONTENT-TYPE" content="text/html"; charset="utf-8">
+    <title>welcome to user register system </title>
+</head>
+<body>
+<div>
+    {% if result %}
+    <p style="color: red">{{result}}</p>
+    {%endif%}
+    <form id="addForm" action="/register" method="post" accept-charset="UTF-8">
+        <div>
+            <label>username:</label>
+            <input id="name" type="text" name="name">
+        </div>
+        <div>
+            <label>password:</label>
+            <input id="password" type="password" name="password">
+        </div>
+        <div>
+            <label>retype password:</label>
+            <input id="repwd" type="password" name="repwd">
+        </div>
+        <div>
+            <label>email:</label>
+            <input id="email" type="text" name="email">
+        </div>
+        <div>
+            <label>mobile:</label>
+            <input id="mobile" type="text" name="mobile">
+        </div>
+        <div>
+            <label>role:</label>
+            <select name="role" id="role">
+                <option value="admin">system admin</option>
+                <option value="user">user</option>
+            </select>
+        </div>
+        <div>
+            <label>status:</label>
+            <select name="status" id="status">
+                <option value=0>normal</option>
+                <option value=1>locked</option>
+            </select>
+        </div>
+        <div>
+            <button type="submit">register now</button>
+            <button>Cancel</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
